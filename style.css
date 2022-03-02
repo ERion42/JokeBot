@@ -36,6 +36,11 @@ button {
   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
 }
 
+button:disabled {
+  cursor: default;
+  filter: brightness(30%);
+}
+
 /* Media Query for Tablet or smaller */
 @media screen and (max-width: 1000px) {
   .container {
@@ -51,11 +56,6 @@ button {
 
   button:active {
     transform: scale(0.98);
-  }
-
-  button:disabled {
-    cursor: default;
-    filter: brightness(30%);
   }
 
 }
